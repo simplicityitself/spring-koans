@@ -10,11 +10,4 @@ class SpringKoansSpec extends BaseKoansSpec with BeforeAndAfter {
     //ApplicationContextKoans.koan1CreateEmptyApplicationContext ::
       List()
   }
-
-  override def koansSolutionMethods: List[Unit] = {
-    val applicationContextKoansSolutions = new ApplicationContextKoansSolutions
-
-    applicationContextKoansSolutions.koan1CreateEmptyApplicationContext ::
-    List()
-  }
 }

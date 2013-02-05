@@ -32,7 +32,7 @@ To start your journey through the Spring Koans:
 * Of course it also helps to have a copy of [Programming Spring from O'Reilly](http://shop.oreilly.com/product/0636920018056.do) as the koans were created to accompany this book, however if you don't have it (or we're still finishing it!) then the koans should still stand on their own and provide a great learning experience.
 * You can use any editor you see fit, ideally one that supports Java and XML to work with these Koans.
 * Next steps are for you to fix that problem, contemplate on why the fix worked the way it did and then to re-run "mvn clean test" to move onto the next step on the journey.
-* If you get stuck, check out the accompanying *-solution projects as they have the pointers on how to move to the next step if it's holding you up. However it's worth noting that the value in koans is the effort you put into figuring out the answers for yourself, so we recommend only using the solutions for checking your answer or if you really are dead stuck (which shouldn't happen, so please raise a [JIRA](https://github.com/simplicityitself/spring-koans/issues) if it does!)
+* If you get stuck, check out the accompanying *-solution projects as they have the pointers on how to move to the next step if it's holding you up. However it's worth noting that the value in koans is the effort you put into figuring out the answers for yourself, so we recommend only using the solutions for checking your answer or if you really are dead stuck (which shouldn't happen, so please raise a [ticket](https://github.com/simplicityitself/spring-koans/issues) if it does!)
 
 Contributors
 ------------

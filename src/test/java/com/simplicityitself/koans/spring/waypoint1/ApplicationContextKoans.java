@@ -34,6 +34,7 @@ public class ApplicationContextKoans {
 
         assertNotNull("BeanDefinitionBuilder is null. Please initialize with a root bean definition.",
                 builder);
+
         assertTrue("Bean Definition should include the SampleRepository class",
                 builder.getBeanDefinition().getBeanClass() == beanClass);
     }

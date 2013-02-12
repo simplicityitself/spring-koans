@@ -1,4 +1,4 @@
-package com.simplicityitself.koans.spring
+package com.simplicityitself.koans.infrastructure
 
 import org.scalatest.FunSuite
 
@@ -9,6 +9,6 @@ abstract class BaseKoansSpec extends FunSuite {
   def koansTitle = "Your Journey Begins..."
 
   test(koansTitle) {
-    koansMethods.foreach({koan => koan})
+    koansMethods.foreach({ koan => koan })
   }
 }

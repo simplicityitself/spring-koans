@@ -1,6 +1,6 @@
 package com.simplicityitself.koans.spring.waypoint1;
 
-import org.junit.Test;
+import com.simplicityitself.koans.infrastructure.Koan;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.GenericApplicationContext;
 
@@ -9,7 +9,7 @@ import static org.junit.Assert.assertTrue;
 
 public class ApplicationContextKoansSolutions {
 
-    @Test
+    @Koan("Description of this Koan...")
     public void koan1CreateEmptyApplicationContext() {
         ApplicationContext applicationContext = new GenericApplicationContext();
 

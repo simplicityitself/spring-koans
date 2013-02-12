@@ -1,5 +1,7 @@
-package com.simplicityitself.koans.spring;
+package com.simplicityitself.koans.spring.waypoint1;
 
+import com.simplicityitself.koans.spring.Repository;
+import com.simplicityitself.koans.spring.SampleRepository;
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -36,7 +38,7 @@ public class ApplicationContextKoans {
                 builder.getBeanDefinition().getBeanClass() == beanClass);
     }
 
-    public void testKoan3AddASpringBeanProgrammaticallyToAnApplicationContextRetrievingByType() {
+    public void koan3AddASpringBeanProgrammaticallyToAnApplicationContextRetrievingByType() {
         GenericApplicationContext applicationContext = new GenericApplicationContext();
 
         BeanDefinitionBuilder builder = BeanDefinitionBuilder
@@ -49,7 +51,7 @@ public class ApplicationContextKoans {
         assertNotNull("Bean retrieved from the ApplicationContext should not be null", beanRetrievedByType);
     }
 
-    public void testKoan4CreateApplicationContextWithValidBeansDocumentAndNoBeans() {
+    public void koan4CreateApplicationContextWithValidBeansDocumentAndNoBeans() {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("no-beans.xml");
         assertNotNull("ApplicationContext is null. Please create an ApplicationContext with no beans.", applicationContext);
     }
@@ -63,7 +65,7 @@ public class ApplicationContextKoans {
                 beanRetrievedByType);
     }
 
-    public void testKoan6CreateApplicationContextWithTwoQualifyingBeansRetrievedByType() {
+    public void koan6CreateApplicationContextWithTwoQualifyingBeansRetrievedByType() {
 
         ApplicationContext applicationContext =
                 new ClassPathXmlApplicationContext("two-bean.xml");
@@ -86,7 +88,7 @@ public class ApplicationContextKoans {
                 beansRetrievedByType.get("sampleBean2"));
     }
 
-    public void testKoan7CreateApplicationContextWithOneBeanRetrievingByName() {
+    public void koan7CreateApplicationContextWithOneBeanRetrievingByName() {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("single-bean.xml");
 
         // Use the applicationContext's getBean method, specifying the ID as a String
@@ -94,7 +96,7 @@ public class ApplicationContextKoans {
         assertNotNull("Bean retrieved from the ApplicationContext should not be null", beanRetrievedByName);
     }
 
-    public void testKoan75CreateApplicationContextWithOneBeanRetrievingByName() {
+    public void koan75CreateApplicationContextWithOneBeanRetrievingByName() {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("single-bean-complete.xml");
 
         // Use the applicationContext's getBean method, specifying the ID as a String AND the Repository class

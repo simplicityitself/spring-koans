@@ -1,6 +1,7 @@
 package com.simplicityitself.koans.spring
 
 import org.scalatest.BeforeAndAfter
+import waypoint1.ApplicationContextKoansSolutions
 
 class SpringKoansSolutionsSpec extends BaseKoansSpec with BeforeAndAfter {
 

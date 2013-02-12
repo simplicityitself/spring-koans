@@ -1,4 +1,4 @@
-package com.simplicityitself.koans.spring;
+package com.simplicityitself.koans.spring.waypoint1;
 
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
